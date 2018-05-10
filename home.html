@@ -9,7 +9,16 @@
     <link rel="stylesheet" type="text/css" media="screen" href="git_submodule_test/main.css" />
     <script src="git_submodule_test/main.js"></script>
 
-   
+   <style>
+   body{
+       margin: 0 auto;
+
+   }
+   header,main{
+       max-width:1000px;
+       margin:0 auto;
+   }
+   </style>
 
 
 </head>
@@ -30,7 +39,15 @@
             <li>result: the code works locally.</li>
             <li>changes ignored on submodule - but still working here with change.</li>
         </ul>
-
+        <h2>Using Submodules</h2>
+        <h3>Add a submodule</h3>
+        <p>~ git submodule add repo_path </p>
+        <h3>Update a submodule to latest</h3>
+        <p>cd submodule_name</p>
+        <p>git checkout master && git pull</p>
+        <p>cd ..</p>
+        <p>git add submodule_name</p>
+        <p>git commit -m "updated submodule to latest version</p>
     </main>
     <script>
         submodule_script();
